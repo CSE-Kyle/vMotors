@@ -13,13 +13,18 @@
   <body>
     <%= yield %>
     
-    <ul class="nav justify-content-center navbar-component">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/aboutUs">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact</a>
-      </li>
-    </ul>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          Home
+        <% end %>
+        <%= link_to about_path, class: "navbar-brand" do %>
+          About
+        <% end %>
+        <%= link_to contact_path, class: "navbar-brand" do %>
+          Contact
+        <% end %>
+      </div>  
+    </nav>
   </body>
 </html>

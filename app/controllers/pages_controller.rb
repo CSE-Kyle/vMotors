@@ -2,7 +2,7 @@ class PagesController < ApplicationController
     def homepage
     end 
     
-    def aboutUs 
+    def about
     end
     
     def contact 
