@@ -1,1 +1,12 @@
 <h1>this is the about page.</h1>
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      Home
+    <% end %>
+    <%= link_to about_path, class: "navbar-brand" do %>
+      About
+    <% end %>
+  </div>  
+</nav>

@@ -1,1 +1,14 @@
-<h1 class="main-heading">vMotors</h1>
+<div class="heading">
+  <h1 class="main-heading">vMotors</h1>
+  
+</div>
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to about_path, class: "navbar-brand" do %>
+      About
+    <% end %>
+    
+    <%= link_to "Contact", new_contact_path, class: "navbar-brand" %>
+  </div>  
+</nav>

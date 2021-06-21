@@ -9,6 +9,8 @@ gem 'puma', '3.4.0'
 gem 'sass-rails', '5.0.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '3.0.0'
+# Use moment.js 
+gem 'momentjs-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '4.2.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
