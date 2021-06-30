@@ -11,6 +11,18 @@
   </head>
 
   <body>
+    <div class="heading">
+      <%= link_to root_path, class: "top-heading" do %>
+        <h1 class="main-heading">vMotors</h1>
+      <% end %>
+    </div>
+    
+    <div class="container">
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
+    </div>
+    
     <%= yield %>
   </body>
 </html>
